@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="com.iottivebeacontool.iottivebeacontool.activity.MainActivity">
+
+    <ListView
+        android:id="@+id/lv_all_bcn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/actionbar_toolbar"/>
+
+    <TextView
+        android:id="@+id/tv_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="@string/no_item"
+        android:visibility="gone" />
+    <LinearLayout
+        android:id="@+id/ll_progrssbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="visible">
+
+        <ProgressBar
+            android:id="@+id/settings_progressbar"
+            android:layout_width="25dp"
+            android:layout_height="25dp" />
+    </LinearLayout>
+</FrameLayout>
+
+
+
+
+
+

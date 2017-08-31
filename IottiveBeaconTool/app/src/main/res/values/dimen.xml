@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="toggle_width">35dp</dimen>
+    <dimen name="toggle_height">40dp</dimen>
+    <dimen name="toggle_padding">10dp</dimen>
+    <dimen name="toggle_padding_top">5dp</dimen>
+</resources>

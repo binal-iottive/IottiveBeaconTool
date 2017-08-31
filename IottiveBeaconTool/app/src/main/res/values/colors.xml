@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorprime">#40D14C</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="appcolor">#E5E8E8</color>
+    <color name="green">#40D14C</color>
+    <color name="gray">#EBEDEF</color>
+    <color name="dark_gray">#566573</color>
+    <drawable name="focused">#40D14C</drawable>
+    <drawable name="selected">#40D14C</drawable>
+
+    <color name="bgMoreInfo">#455A64</color>
+    <color name="secondaryText">#757575</color>
+</resources>

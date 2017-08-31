@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:padding="25dp"
+    android:background="@drawable/dialog_back"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_edit_attachment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/edit_attachment"
+        android:gravity="center_horizontal"
+        android:background="@color/appcolor"
+        android:padding="10dp"
+        android:textSize="16sp"
+        android:textColor="@color/colorprime" />
+    <TextView
+        android:id="@+id/tv_deactivate_beacon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/deactivate_beacon"
+        android:gravity="center_horizontal"
+        android:background="@color/appcolor"
+        android:padding="10dp"
+        android:textSize="16sp"
+        android:layout_marginTop="15dp"
+        android:textColor="@android:color/holo_blue_light" />
+    <TextView
+        android:id="@+id/tv_decommission_beacon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/decommission_beacon"
+        android:gravity="center_horizontal"
+        android:background="@color/appcolor"
+        android:padding="10dp"
+        android:textSize="16sp"
+        android:layout_marginTop="15dp"
+        android:textColor="@android:color/holo_red_dark" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/decommission_beacon_desc"
+        android:padding="10dp"
+        android:textSize="14sp"
+        android:layout_marginTop="15dp" />
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appcolor"
+    android:padding="15dp"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/tv_stable"
+        style="@style/stable_text_ui"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/stable" />
+    <TextView
+        android:id="@+id/tv_portable"
+        style="@style/stable_text_ui"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/portable" />
+    <TextView
+        android:id="@+id/tv_mobile"
+        style="@style/stable_text_ui"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/mobile" />
+    <TextView
+        android:id="@+id/tv_roving"
+        style="@style/stable_text_ui"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/roving" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/stable_disc"
+        android:textSize="14sp"
+        android:layout_marginTop="30dp"/>
+</LinearLayout>

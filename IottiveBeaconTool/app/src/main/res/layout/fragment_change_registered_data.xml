@@ -1,0 +1,253 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="com.iottivebeacontool.iottivebeacontool.fragment.EditingBeacon">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/beaconinfo_text_back">
+
+            <TextView
+                android:id="@+id/tv_loaction"
+                style="@style/Beaconinfo_text_ui"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/location" />
+
+            <ToggleButton
+                android:id="@+id/tb_location"
+                style="@style/Toggle_ui"
+                android:layout_width="@dimen/toggle_width"
+                android:layout_height="@dimen/toggle_height" />
+
+            <RelativeLayout
+                android:id="@+id/rl_map"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_loaction"
+                android:visibility="gone">
+
+                <fragment
+                    android:id="@+id/map"
+                    android:name="com.google.android.gms.maps.SupportMapFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_tap_location"
+                style="@style/tap_add_ui"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rl_map"
+                android:text="@string/tap_loaction"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/beaconinfo_text_back">
+
+            <TextView
+                android:id="@+id/tv_stability"
+                style="@style/Beaconinfo_text_ui"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/expacted_stability" />
+
+            <ToggleButton
+                android:id="@+id/tb_stability"
+                style="@style/Toggle_ui"
+                android:layout_width="@dimen/toggle_width"
+                android:layout_height="@dimen/toggle_height" />
+
+            <TextView
+                android:id="@+id/tv_tap_stability"
+                style="@style/tap_add_ui"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_stability"
+                android:text="@string/tap_stability"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/beaconinfo_text_back">
+
+            <TextView
+                android:id="@+id/tv_desc"
+                style="@style/Beaconinfo_text_ui"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/description" />
+
+            <ToggleButton
+                android:id="@+id/tb_desc"
+                style="@style/Toggle_ui"
+                android:layout_width="@dimen/toggle_width"
+                android:layout_height="@dimen/toggle_height" />
+
+            <TextView
+                android:id="@+id/tv_tap_desc"
+                style="@style/tap_add_ui"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_desc"
+                android:text="@string/tap_description"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/beaconinfo_text_back">
+
+            <TextView
+                android:id="@+id/tv_floorlvl"
+                style="@style/Beaconinfo_text_ui"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/floor_level" />
+
+            <ToggleButton
+                android:id="@+id/tb_floorlvl"
+                style="@style/Toggle_ui"
+                android:layout_width="@dimen/toggle_width"
+                android:layout_height="@dimen/toggle_height" />
+
+            <TextView
+                android:id="@+id/tv_tap_floorlvl"
+                style="@style/tap_add_ui"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_floorlvl"
+                android:text="@string/tap_floorelevel"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/beaconinfo_text_back">
+
+            <TextView
+                android:id="@+id/tv_properties"
+                style="@style/Beaconinfo_text_ui"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/properties" />
+
+            <ImageView
+                android:id="@+id/iv_properties"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:src="@drawable/plus_icon" />
+
+            <com.iottivebeacontool.iottivebeacontool.NonScrollableListView
+                android:id="@+id/lv_propretyList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_properties"
+                android:layout_marginRight="15dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/beaconinfo_text_back">
+
+            <TextView
+                android:id="@+id/tv_attechment"
+                style="@style/Beaconinfo_text_ui"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/attachment" />
+
+            <ImageView
+                android:id="@+id/iv_attechments"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:src="@drawable/plus_icon" />
+
+            <com.iottivebeacontool.iottivebeacontool.NonScrollableListView
+                android:id="@+id/lv_attachmentList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_attechment"
+                android:layout_marginRight="15dp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_save_changes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@color/colorprime"
+            android:paddingBottom="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:paddingTop="10dp"
+            android:text="SAVE CHANGES"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/tv_Ddeactivate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:paddingBottom="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:paddingTop="10dp"
+            android:background="@color/appcolor"
+            android:text="DEACTIVATE BEACON"
+            android:textColor="@color/colorprime"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/tv_decommision"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:paddingBottom="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:paddingTop="10dp"
+            android:background="@color/appcolor"
+            android:text="DECOMMISION BEACON"
+            android:textColor="@color/bgMoreInfo"
+            android:textSize="16sp" />
+
+
+
+    </LinearLayout>
+</ScrollView>
+

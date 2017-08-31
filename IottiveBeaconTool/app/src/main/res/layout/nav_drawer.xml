@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/colorprime">
+        <TextView
+            android:id="@+id/tv_pic_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Select a account"
+            android:drawablePadding="20dp"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:layout_marginBottom="10dp"
+            android:layout_alignParentBottom="true"
+            android:drawableRight="@drawable/arrow_down"/>
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/current_project"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/secondaryText"
+        android:textSize="16sp"/>
+    <TextView
+        android:id="@+id/tv_projectId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="binal.iottive.com"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/bgMoreInfo"
+        android:textStyle="bold"
+        android:textSize="16sp"/>
+    <TextView
+        android:id="@+id/tv_projectNum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="3765658767886"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/secondaryText"
+        android:textSize="16sp"/>
+    <TextView
+        android:id="@+id/tv_switch_pro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/switch_project"
+        android:padding="15dp"
+        android:layout_marginTop="5dp"
+        android:drawableLeft="@drawable/switch_account"
+        android:drawablePadding="15dp"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray"/>
+    <TextView
+        android:id="@+id/tv_nearby"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/beacon_near_me"
+        android:padding="15dp"
+        android:drawableLeft="@drawable/bluetooth"
+        android:drawablePadding="15dp"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"/>
+    <TextView
+        android:id="@+id/tv_all_beacon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/all_my_beacon"
+        android:padding="15dp"
+        android:drawableLeft="@drawable/all_baecon"
+        android:drawablePadding="15dp"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray"/>
+
+
+
+
+
+
+</LinearLayout>

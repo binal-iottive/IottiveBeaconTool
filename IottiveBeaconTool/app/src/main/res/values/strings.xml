@@ -1,0 +1,85 @@
+<resources>
+    <string name="app_name">IottiveBeaconTool</string>
+    <string name="web_client_secret">714jyYhHZDAz1q2KVYQ6Lluz</string>
+    <string name="web_client_id">358697015074-51ah9uoa95ckotntpn8n122qh9uglru2.apps.googleusercontent.com</string>
+    <string name="CLIENT_ID">358697015074-qo0mqd1gihdb05req28idn22frvf8bvm.apps.googleusercontent.com</string>
+
+
+    <!-- drawer-->
+    <string name="select_sccount">Select a account</string>
+    <string name="current_project">Current Project</string>
+    <string name="switch_project">Switch Project</string>
+    <string name="beacon_near_me">Beacons Near Me</string>
+    <string name="project_list">Choose a  Project</string>
+    <string name="all_my_beacon">All My Beacons</string>
+    <string name="no_item">No Item Currently Available</string>
+
+    <string name="unregistered">UNREGISTERED</string>
+    <string name="registered">REGISTERED</string>
+
+    <!--register-->
+    <string name="location">Location</string>
+    <string name="expacted_stability">Expected Stability</string>
+    <string name="description">Description</string>
+    <string name="attachment">Attechments</string>
+    <string name="floor_level">Floor Level</string>
+    <string name="properties">Properties</string>
+    <string name="registering_bcn">Registering Beacon</string>
+    <string name="tap_loaction">(Tap to add a loaction)</string>
+    <string name="tap_stability">(Tap to set stability)</string>
+    <string name="tap_description">(tap to add description)</string>
+    <string name="tap_floorelevel">(Tap to set floor level)</string>
+
+    <!--description-->
+    <string name="desc_text">The description is a private field with a maximum size of 140 characters that is accessible
+    only by beacon administrators. Use attachments for sharing data with other apps.</string>
+    <string name="add">Add</string>
+    <string name="edit_beacon">Edit Beacon</string>
+
+    <!--stability-->
+    <string name="expected_stability">Expected Stability</string>
+    <string name="stable">STABLE</string>
+    <string name="portable">PORTABLE</string>
+    <string name="mobile">MOBILE</string>
+    <string name="roving">ROVING</string>
+    <string name="stability">Stability</string>
+    <string name="stable_disc">Stable beacons positions are fixed. \nPortable beacons may change positions, but not often.
+                \nMobile beacons move around frequently. \nRoving beacons are expected to move constantly.</string>
+
+
+    <!--indoor level-->
+    <string name="floor_des">You can pick a floor level to associate with the geographical position of the becaon.</string>
+    <string name="indoor_floor_lvl">Indoor Floor Level</string>
+
+    <!--property-->
+    <string name="name">Name:</string>
+    <string name="value">Value:</string>
+    <string name="enter_key">Enter a key</string>
+    <string name="enter_value">Enter a Value</string>
+    <string name="property_des">Properties are private data available only to beacon administarators. Use attachments for
+        sharing data with apps that scan for beacons.</string>
+
+    <!--attachment-->
+
+    <string name="namespace_type">Namespaced Type</string>
+    <string name="data">Data</string>
+    <string name="Attachment_data">Attachment data</string>
+    <string name="attach_des">The attachment namespace for your project is fixed, but you can add any type and
+    value you wish for your attachment.</string>
+    <string name="content_delete">Delete Attachment</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <!--edit-->
+    <string name="edit_attachment">EDIT ATTACHMENT</string>
+    <string name="deactivate_beacon">DEACTIVATE BEACON</string>
+    <string name="decommission_beacon">DECOMMISSION BEACON</string>
+    <string name="decommission_beacon_desc">Inactive beacon cannot serve attachments but can be edited.\n \nDecommissioned beacons are permanently disabled. They can not serve
+        attachments and cannot be made active again.</string>
+    <string name="deactivate_beacon_desc">Inactive beacon cannot serve attachments but can be edited.</string>
+
+
+
+</resources>
